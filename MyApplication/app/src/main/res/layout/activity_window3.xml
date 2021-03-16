@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="25dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".window3">
+
+    <ImageView
+        android:id="@+id/imagen"
+        android:layout_width="match_parent"
+        android:layout_height="261dp"
+        android:src="@drawable/ic_launcher_foreground"/>
+
+    <EditText
+        android:id="@+id/usuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imagen"
+        android:hint="Usuario">
+    </EditText>
+
+    <Spinner
+        android:id="@+id/nivelEducativo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/usuario"
+        android:entries="@array/nivelEducativo"
+        >
+
+    </Spinner>
+
+    <Button
+        android:id="@+id/web"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nivelEducativo"
+        android:hint="WEB"
+        android:textColor="@color/white"
+        app:iconTint="#F3E7E7">
+    </Button>
+
+    <Button
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/web"
+        android:hint="FRAME"
+        android:textColor="#FFFFFF">
+
+    </Button>
+
+</RelativeLayout>
